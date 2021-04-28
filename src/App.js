@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import {makeStyles} from "@material-ui/core";
+import NavBar from "./components/Navbar";
+import Header from "./components/Header";
+import Catalogo from "./components/Catalogo";
+import Fotos from "./components/Fotos";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Grid from "./components/Grid";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      < >
+          <NavBar dark={true}/>
+          <Header title="Header" id="header" dark={true}/>
+          <Grid title="grid" id="grid" dark={true}/>
+          <Catalogo title="Catalogo" id="catalogo" dark={true}/>
+          <Fotos title="Foto" id="foto" dark={true}/>
+          <Contact title="Contacto" id="contact" dark={true}/>
+          <Footer title="footer" id="footer" dark={true}/>
+      </>
   );
 }
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        //  ----
+    }
+}))
 
 export default App;
