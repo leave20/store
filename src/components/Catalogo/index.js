@@ -45,6 +45,7 @@ const mockData = [
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: "24px 0",
+    overflow: "hidden",
   },
   headingBox: {
     textAlign: "center",
