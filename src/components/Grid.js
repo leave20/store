@@ -1,18 +1,13 @@
-import React from 'react'
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  Grid,
-  Typography,
-} from '@material-ui/core'
+import { Grid, Typography } from "@material-ui/core";
 // import newTheme from '../styles/NewTheme'
 
+export default function StyledGrid({ title, dark, id }) {
+  const classes = useStyles();
 
-export default function StyledGrid({title, dark, id}) {
-
-  const classes = useStyles()
-
-  return(
-    <Grid container className={classes.root} id={id} component='section'>
+  return (
+    <Grid container className={classes.root} id={id} component="section">
       <Grid item lg={7} className={classes.imgContainer}>
         <img
           src="https://i.postimg.cc/jdBJ70s9/Foto-de-juan-mendez-en-Pexels-1.jpg"
@@ -20,31 +15,33 @@ export default function StyledGrid({title, dark, id}) {
           className={classes.img}
         />
       </Grid>
-      <Grid item container lg={5} alignItems='center' justify='center' direction='column'>
-        <Typography
-          variant='h2'
-          align='center'
-        >
+      <Grid
+        item
+        container
+        lg={5}
+        alignItems="center"
+        justify="center"
+        direction="column"
+      >
+        <Typography variant="h2" align="center">
           LOREM IPSUM
         </Typography>
-        <Typography
-          variant='h4'
-          align='center'
-        >
+        <Typography variant="h4" align="center">
           LOREM IPSUM
         </Typography>
       </Grid>
-      <Grid item container lg={5} alignItems='center' justify='center' direction='column'>
-        <Typography
-          variant='h2'
-          align='center'
-        >
+      <Grid
+        item
+        container
+        lg={5}
+        alignItems="center"
+        justify="center"
+        direction="column"
+      >
+        <Typography variant="h2" align="center">
           LOREM IPSUM
         </Typography>
-        <Typography
-          variant='h4'
-          align='center'
-        >
+        <Typography variant="h4" align="center">
           LOREM IPSUM
         </Typography>
       </Grid>
@@ -57,22 +54,22 @@ export default function StyledGrid({title, dark, id}) {
       </Grid>
     </Grid>
   );
-};
+}
 
-const useStyles= makeStyles(theme => ({
-  root:{
-    width: '100%',
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
     padding: `${theme.spacing(3)}px 0`,
-    background: '#F7E4D0',
-    height: '100vh',
+    background: "#F7E4D0",
+    height: "100vh",
   },
-  imgContainer:{
-    height: '50%',
+  imgContainer: {
+    height: "50%",
   },
-  img:{
-    width: '100%',
-    height: '100%',
-    objectFit:'cover',
-    objectPosition: 'bottom',
+  img: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    objectPosition: "bottom",
   },
 }));

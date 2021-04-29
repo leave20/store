@@ -39,11 +39,26 @@ export default function Fotos({ title, dark, id }) {
         </Typography>
       </Box>
       <Box className={classes.photosGrid}>
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
       </Box>
     </Box>
   );
