@@ -1,10 +1,10 @@
-import {AppBar, Divider, Drawer, IconButton, List, ListItem, makeStyles, Toolbar} from "@material-ui/core";
+import { AppBar, Divider, Drawer, IconButton, List, ListItem, makeStyles, Toolbar } from "@material-ui/core";
 import newTheme from "../styles/NewTheme"
 import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
-import {useState} from "react";
-import {Link} from 'react-scroll'
-import logo from "../images/logo.svg"
+import { useState } from "react";
+import { Link } from 'react-scroll'
+// import logo from "../images/logo.svg"
 
 const links = [
     {
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     logo: {
-        width:"10rem",
+        width: "10rem",
         objectFit: "contain",
         "&:hover": {
             cursor: "pointer"
@@ -105,25 +105,25 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export default function NavBar({title, dark, id}) {
-    const classes=useStyles()
+export default function NavBar({ title, dark, id }) {
+    const classes = useStyles()
     const [open, setOpen] = useState(false)
 
-    return(
+    return (
         <>
             <AppBar position="sticky" className={`${classes.root} `}>
                 <Toolbar className={classes.toolbar}>
-                    <img src={logo} className={classes.logo} alt="logo"/>
+                    {/* <img src={logo} className={classes.logo} alt="logo" /> */}
                     <List className={classes.menu}>
                         {
-                            links.map(({id, text}, index) => (
+                            links.map(({ id, text }, index) => (
                                 <Link key={index} to={id} spy={true} smooth={true} activeClass="active" duration={500}
-                                      offset={-70.5}>{text}</Link>
+                                    offset={-70.5}>{text}</Link>
                             ))
                         }
                     </List>
                     <IconButton edge="end" className={classes.menubutton} onClick={() => setOpen(!open)}>
-                        <MenuIcon fontSize="large"/>
+                        <MenuIcon fontSize="large" />
                     </IconButton>
 
                 </Toolbar>
@@ -131,11 +131,11 @@ export default function NavBar({title, dark, id}) {
             </AppBar>
             <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
                 <IconButton onClick={() => setOpen(false)} >
-                    <CloseIcon className={classes.cancelIcon} fontSize="large"/>
+                    <CloseIcon className={classes.cancelIcon} fontSize="large" />
                 </IconButton>
-                <Divider/>
+                <Divider />
                 {
-                    links.map(({id, text}, index) => (
+                    links.map(({ id, text }, index) => (
                         <Link
                             className={classes.sidebar}
                             key={index}
@@ -154,6 +154,6 @@ export default function NavBar({title, dark, id}) {
             </Drawer>
         </>
 
-)
+    )
 
 }
