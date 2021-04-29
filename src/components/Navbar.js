@@ -1,3 +1,4 @@
+
 import {
   AppBar,
   Divider,
@@ -16,6 +17,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 
 const logo = `${process.env.PUBLIC_URL}/logo.svg`;
+
 
 const links = [
   {
@@ -71,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
+
     "& a": {
       color: "#212834",
       fontSize: "1.25rem",
@@ -97,6 +100,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       width: "50vw",
     },
+
     "& h5": {
       margin: theme.spacing(2, 0, 0, 0),
       color: "#212834",
@@ -115,6 +119,7 @@ const useStyles = makeStyles((theme) => ({
 export default function NavBar({ title, dark, id }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
+
 
   return (
     <>
