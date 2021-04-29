@@ -7,6 +7,10 @@ import {
 // import newTheme from '../styles/NewTheme'
 
 
+const useStyles = makeStyles((theme) => ({
+  root: {},
+}));
+
 export default function StyledGrid({title, dark, id}) {
 
   const classes = useStyles()
