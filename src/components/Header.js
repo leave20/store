@@ -1,3 +1,4 @@
+
 import { makeStyles, Paper, Grid } from "@material-ui/core";
 import newTheme from "../styles/NewTheme"
 
@@ -52,3 +53,4 @@ export default function Header({ title, dark, id }) {
         </div>
     )
 }
+
