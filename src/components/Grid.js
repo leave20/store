@@ -56,13 +56,13 @@ export default function StyledGrid({title, dark, id}) {
         <Typography
           variant='h2'
           align='center'
-          >
+        >
           LOREM IPSUM
         </Typography>
         <Typography
           variant='h4'
           align='center'
-          >
+        >
           LOREM IPSUM
         </Typography>
       </Grid>
