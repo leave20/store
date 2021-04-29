@@ -4,7 +4,7 @@ import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
 import { useState } from "react";
 import { Link } from 'react-scroll'
-// import logo from "../images/logo.svg"
+import logo from "../images/logo.svg"
 
 const links = [
     {
@@ -113,7 +113,7 @@ export default function NavBar({ title, dark, id }) {
         <>
             <AppBar position="sticky" className={`${classes.root} `}>
                 <Toolbar className={classes.toolbar}>
-                    {/* <img src={logo} className={classes.logo} alt="logo" /> */}
+                    <img src={logo} className={classes.logo} alt="logo" />
                     <List className={classes.menu}>
                         {
                             links.map(({ id, text }, index) => (
