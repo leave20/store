@@ -1,4 +1,7 @@
-import { makeStyles, Box, Typography } from "@material-ui/core";
+import { makeStyles, Box } from "@material-ui/core";
+
+import SectionHeader from "./SectionHeader";
+
 // import newTheme from "../styles/NewTheme";
 
 const useStyles = makeStyles((theme) => ({
@@ -30,20 +33,31 @@ export default function Fotos({ title, dark, id }) {
   const classes = useStyles();
   return (
     <Box component="section" className={classes.root}>
-      <Box className={classes.headingBox}>
-        <Typography variant="h4" className={classes.heading}>
-          {title}
-        </Typography>
-        <Typography variant="body2" className={classes.anchor}>
-          Fotos de nuestros clientes agradecidos con su respectiva compra
-        </Typography>
-      </Box>
+      <SectionHeader
+        title={title}
+        description="Fotos de nuestros clientes agradecidos con su respectiva compra"
+      />
       <Box className={classes.photosGrid}>
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
-        <img src="https://via.placeholder.com/246x248.png" alt="photo_item" />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+          alt="photo_item"
+        />
       </Box>
     </Box>
   );

@@ -1,5 +1,6 @@
 import { makeStyles, Paper, Grid } from "@material-ui/core";
 import newTheme from "../styles/NewTheme";
+import banner from "../images/g898.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,12 +30,7 @@ export default function Header({ title, dark, id }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <img
-        className={classes.header}
-        src={
-          "https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
-        }
-      />
+      <img className={classes.header} src={banner} />
       <div>
         <Grid container>
           <Grid item md={4}>
