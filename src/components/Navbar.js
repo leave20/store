@@ -1,4 +1,3 @@
-
 import {
   AppBar,
   Divider,
@@ -17,7 +16,6 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 
 const logo = `${process.env.PUBLIC_URL}/logo.svg`;
-
 
 const links = [
   {
@@ -119,7 +117,6 @@ const useStyles = makeStyles((theme) => ({
 export default function NavBar({ title, dark, id }) {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-
 
   return (
     <>
