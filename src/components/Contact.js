@@ -15,7 +15,6 @@ export default function Contact({ title, dark, id, contacto }) {
       </Typography>
       <Button
         color="inherit"
-        size="large"
         href={`https://api.whatsapp.com/send/?phone=${numero}`}
         target="_bank"
         className={classes.button}
@@ -41,6 +40,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.375rem",
   },
   icon: {
-    fontSize: "2rem",
+    fontSize: "2rem !important",
   },
 }));
