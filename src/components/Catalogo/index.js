@@ -11,42 +11,42 @@ const mockData = [
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
     image:
-      "https://www.modcloth.com/dw/image/v2/ABAT_PRD/on/demandware.static/-/Sites-modcloth-master/default/dwa594f9c2/images/20000311_memories_meant_to_bloom_dress_trudy_vintage_floral_black_ALT03.jpg?sw=600&sm=fit",
+      "https://i.pinimg.com/474x/9e/61/03/9e6103b4b21bc5e0ce03f677f711371d--blue-flowers-print-shorts.jpg",
   },
   {
     id: 2,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
     image:
-      "https://www.modcloth.com/dw/image/v2/ABAT_PRD/on/demandware.static/-/Sites-modcloth-master/default/dwa594f9c2/images/20000311_memories_meant_to_bloom_dress_trudy_vintage_floral_black_ALT03.jpg?sw=600&sm=fit",
+      "https://i.pinimg.com/474x/9e/61/03/9e6103b4b21bc5e0ce03f677f711371d--blue-flowers-print-shorts.jpg",
   },
   {
     id: 3,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
     image:
-      "https://www.modcloth.com/dw/image/v2/ABAT_PRD/on/demandware.static/-/Sites-modcloth-master/default/dwa594f9c2/images/20000311_memories_meant_to_bloom_dress_trudy_vintage_floral_black_ALT03.jpg?sw=600&sm=fit",
+      "https://i.pinimg.com/474x/9e/61/03/9e6103b4b21bc5e0ce03f677f711371d--blue-flowers-print-shorts.jpg",
   },
   {
     id: 4,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
     image:
-      "https://www.modcloth.com/dw/image/v2/ABAT_PRD/on/demandware.static/-/Sites-modcloth-master/default/dwa594f9c2/images/20000311_memories_meant_to_bloom_dress_trudy_vintage_floral_black_ALT03.jpg?sw=600&sm=fit",
+      "https://i.pinimg.com/474x/9e/61/03/9e6103b4b21bc5e0ce03f677f711371d--blue-flowers-print-shorts.jpg",
   },
   {
     id: 5,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
     image:
-      "https://www.modcloth.com/dw/image/v2/ABAT_PRD/on/demandware.static/-/Sites-modcloth-master/default/dwa594f9c2/images/20000311_memories_meant_to_bloom_dress_trudy_vintage_floral_black_ALT03.jpg?sw=600&sm=fit",
+      "https://i.pinimg.com/474x/9e/61/03/9e6103b4b21bc5e0ce03f677f711371d--blue-flowers-print-shorts.jpg",
   },
   {
     id: 6,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
     image:
-      "https://www.modcloth.com/dw/image/v2/ABAT_PRD/on/demandware.static/-/Sites-modcloth-master/default/dwa594f9c2/images/20000311_memories_meant_to_bloom_dress_trudy_vintage_floral_black_ALT03.jpg?sw=600&sm=fit",
+      "https://i.pinimg.com/474x/9e/61/03/9e6103b4b21bc5e0ce03f677f711371d--blue-flowers-print-shorts.jpg",
   },
 ];
 

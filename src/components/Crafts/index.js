@@ -8,37 +8,43 @@ const mockData = [
     id: 1,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
-    image: "https://via.placeholder.com/261x356.png",
+    image:
+      "https://i.pinimg.com/originals/89/24/00/8924006c70834821cc1509f82d21f2ab.jpg",
   },
   {
     id: 2,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
-    image: "https://via.placeholder.com/261x356.png",
+    image:
+      "https://i.pinimg.com/originals/89/24/00/8924006c70834821cc1509f82d21f2ab.jpg",
   },
   {
     id: 3,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
-    image: "https://via.placeholder.com/261x356.png",
+    image:
+      "https://i.pinimg.com/originals/89/24/00/8924006c70834821cc1509f82d21f2ab.jpg",
   },
   {
     id: 4,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
-    image: "https://via.placeholder.com/261x356.png",
+    image:
+      "https://i.pinimg.com/originals/89/24/00/8924006c70834821cc1509f82d21f2ab.jpg",
   },
   {
     id: 5,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
-    image: "https://via.placeholder.com/261x356.png",
+    image:
+      "https://i.pinimg.com/originals/89/24/00/8924006c70834821cc1509f82d21f2ab.jpg",
   },
   {
     id: 6,
     header: " NOM/TIPO DEL VESTIDO",
     price: "s/ 90.99",
-    image: "https://via.placeholder.com/261x356.png",
+    image:
+      "https://i.pinimg.com/originals/89/24/00/8924006c70834821cc1509f82d21f2ab.jpg",
   },
 ];
 
