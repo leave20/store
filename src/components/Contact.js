@@ -10,7 +10,7 @@ export default function Contact({ title, dark, id, contacto }) {
 
   return (
     <Box className={classes.root} component="section" id={id}>
-      <Typography variant="h6" align="center">
+      <Typography variant="h6" align="center" className={classes.text}>
         Realiza tu compra al siguiente número
       </Typography>
       <Button
@@ -34,9 +34,18 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.down("md")]: {
+      height: "30vh",
+    },
+  },
+  text: {
+    margin: "auto",
+    [theme.breakpoints.down("sm")]: {
+      margin: "0 auto",
+    },
   },
   button: {
-    marginTop: theme.spacing(7),
+    margin: "auto",
     fontSize: "1.375rem",
   },
   icon: {
