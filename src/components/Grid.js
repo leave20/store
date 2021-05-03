@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#F7E4D0",
     height: "100vh",
     [theme.breakpoints.down("sm")]: {
-      height: "125vh",
+      height: "140vh",
     },
   },
   textContainer: {
