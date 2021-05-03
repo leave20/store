@@ -14,15 +14,24 @@ const useStyles = makeStyles((theme) => ({
   },
 
   card: {
-    borderRadius: "none",
+    borderRadius: 0,
     padding: 32,
-    borderStyle: "none",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 0,
+      marginRight: 0,
+      marginBottom: 2,
+    },
   },
   midddleCard: {
-    borderRadius: "none",
+    borderRadius: 0,
     padding: 22.5,
     marginLeft: 15,
     marginRight: 15,
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 0,
+      marginRight: 0,
+      marginBottom: 2,
+    },
   },
 }));
 
@@ -32,17 +41,18 @@ export default function Header({ title, dark, id }) {
     <div className={classes.root}>
       <img className={classes.header} src={banner} />
       <div>
-        <Grid container>
-          <Grid item md={4}>
+        <Grid container style={{ width: "100%" }}>
+          <Grid item sm={10} md={4} style={{ width: "100%" }}>
             <Paper className={classes.card}>De Lunes a Sabado</Paper>
           </Grid>
-          <Grid item md={4}>
+
+          <Grid item sm={10} md={4} style={{ width: "100%" }}>
             <Paper className={classes.midddleCard}>
               Nuestros horatios de a tencion <br />
               8:00 am - 20:00pm
             </Paper>
           </Grid>
-          <Grid item md={4}>
+          <Grid item sm={10} md={4} style={{ width: "100%" }}>
             <Paper className={classes.card}>Repartimos por todo Lima</Paper>
           </Grid>
         </Grid>
