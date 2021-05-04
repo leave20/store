@@ -39,24 +39,24 @@ export default function Header({ title, dark, id }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <img className={classes.header} src={banner} />
-      <div>
-        <Grid container style={{ width: "100%" }}>
-          <Grid item sm={10} md={4} style={{ width: "100%" }}>
-            <Paper className={classes.card}>De Lunes a Sabado</Paper>
-          </Grid>
+      <img className={classes.header} src={banner} alt="banner" />
 
-          <Grid item sm={10} md={4} style={{ width: "100%" }}>
-            <Paper className={classes.midddleCard}>
-              Nuestros horatios de a tencion <br />
-              8:00 am - 20:00pm
-            </Paper>
-          </Grid>
-          <Grid item sm={10} md={4} style={{ width: "100%" }}>
-            <Paper className={classes.card}>Repartimos por todo Lima</Paper>
-          </Grid>
+      <Grid container>
+        <Grid item md={4} style={{ width: "100%" }}>
+          <Paper className={classes.card}>De Lunes a Sabado</Paper>
         </Grid>
-      </div>
+
+        <Grid item md={4} style={{ width: "100%" }}>
+          <Paper className={classes.midddleCard}>
+            Nuestros horatios de a tencion <br />
+            8:00 am - 20:00pm
+          </Paper>
+        </Grid>
+
+        <Grid item md={4} style={{ width: "100%" }}>
+          <Paper className={classes.card}>Repartimos por todo Lima</Paper>
+        </Grid>
+      </Grid>
     </div>
   );
 }
