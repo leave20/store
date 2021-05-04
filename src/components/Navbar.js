@@ -4,7 +4,7 @@ import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
 import {useState} from "react";
 import {Link} from 'react-scroll'
-// import logo from "../images/logo.svg"
+import logo from "../images/logo.svg"
 
 const links = [
     {
