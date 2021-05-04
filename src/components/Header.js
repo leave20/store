@@ -52,6 +52,7 @@ export default function Header({ title, dark, id }) {
             8:00 am - 20:00pm
           </Paper>
         </Grid>
+
         <Grid item md={4} style={{ width: "100%" }}>
           <Paper className={classes.card}>Repartimos por todo Lima</Paper>
         </Grid>
