@@ -1,4 +1,4 @@
-import { makeStyles, Box } from "@material-ui/core";
+import { makeStyles, Box, Hidden } from "@material-ui/core";
 
 import SectionHeader from "./SectionHeader";
 
@@ -32,33 +32,35 @@ const useStyles = makeStyles((theme) => ({
 export default function Fotos({ title, dark, id }) {
   const classes = useStyles();
   return (
-    <Box component="section" className={classes.root}>
-      <SectionHeader
-        title={title}
-        description="Fotos de nuestros clientes agradecidos con su respectiva compra"
-      />
-      <Box className={classes.photosGrid}>
-        <img
-          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
-          alt="photo_item"
+    <Hidden smDown>
+      <Box component="section" className={classes.root}>
+        <SectionHeader
+          title={title}
+          description="Fotos de nuestros clientes agradecidos con su respectiva compra"
         />
-        <img
-          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
-          alt="photo_item"
-        />
-        <img
-          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
-          alt="photo_item"
-        />
-        <img
-          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
-          alt="photo_item"
-        />
-        <img
-          src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
-          alt="photo_item"
-        />
+        <Box className={classes.photosGrid}>
+          <img
+            src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+            alt="photo_item"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+            alt="photo_item"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+            alt="photo_item"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+            alt="photo_item"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.UMwlUoXJ0HhSGsfUF_BOzgHaE7?pid=ImgDet&rs=1"
+            alt="photo_item"
+          />
+        </Box>
       </Box>
-    </Box>
+    </Hidden>
   );
 }
