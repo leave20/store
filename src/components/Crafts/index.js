@@ -1,8 +1,8 @@
-import { makeStyles, Box, Container, Link } from "@material-ui/core";
+import { makeStyles, Box, Container, Link, Grid } from "@material-ui/core";
 
 import SectionHeader from "../SectionHeader";
 import { Carousel } from "./Carousel";
-
+import { useEffect, useState } from "react";
 const mockData = [
   {
     id: 1,
@@ -54,6 +54,19 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Crafts = ({ title }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleSize = () => {
+    if (window.innerWidth < 959) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleSize);
+  }, []);
   const classes = useStyles();
 
   return (
@@ -67,8 +80,9 @@ const Crafts = ({ title }) => {
             </Link>
           )}
         />
-        <Carousel mb={120} data={mockData} />
-        <Carousel data={mockData} />
+
+        <Carousel mb={120} mobile={isMobile} data={mockData} />
+        <Carousel mobile={isMobile} data={mockData} />
       </Container>
     </Box>
   );
