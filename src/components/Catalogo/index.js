@@ -88,7 +88,7 @@ export default function Catalogo({ title, dark, id }) {
           title={title}
           descriptionElement={(props) => (
             <Link href="/" className={`${props.className} ${classes.anchor}`}>
-              {`isMobile: ${isMobile}`}
+              {`< VER TODOS >`}
             </Link>
           )}
         />
